@@ -42,4 +42,19 @@ Public Class Form10
 
         End Try
     End Sub
+    Public Sub disp_data()
+        a.Open()
+        b = a.CreateCommand()
+        b.CommandType = CommandType.Text
+        b.CommandText = "select * from studentinfo"
+        b.ExecuteNonQuery()
+        Dim dt As New DataTable()
+        Dim da As New SqlDataAdapter(b)
+        da.Fill(dt)
+        DataGridView1.DataSource = dt
+        a.Close()
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        disp_data()
+    End Sub
 End Class

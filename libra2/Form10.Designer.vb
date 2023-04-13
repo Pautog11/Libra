@@ -25,10 +25,6 @@ Partial Class Form10
         Me.components = New System.ComponentModel.Container()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Database1DataSet4 = New libra2.Database1DataSet4()
-        Me.StudentinfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.StudentinfoTableAdapter = New libra2.Database1DataSet4TableAdapters.studentinfoTableAdapter()
         Me.StudentidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,15 +32,20 @@ Partial Class Form10
         Me.YearDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CourseDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ContactDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StudentinfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet4 = New libra2.Database1DataSet4()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.StudentinfoTableAdapter = New libra2.Database1DataSet4TableAdapters.studentinfoTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Database1DataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StudentinfoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Database1DataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(298, 352)
+        Me.Button3.Location = New System.Drawing.Point(316, 363)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(122, 41)
         Me.Button3.TabIndex = 47
@@ -62,30 +63,6 @@ Partial Class Form10
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(741, 196)
         Me.DataGridView1.TabIndex = 48
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(266, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 30)
-        Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Student List"
-        '
-        'Database1DataSet4
-        '
-        Me.Database1DataSet4.DataSetName = "Database1DataSet4"
-        Me.Database1DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'StudentinfoBindingSource
-        '
-        Me.StudentinfoBindingSource.DataMember = "studentinfo"
-        Me.StudentinfoBindingSource.DataSource = Me.Database1DataSet4
-        '
-        'StudentinfoTableAdapter
-        '
-        Me.StudentinfoTableAdapter.ClearBeforeFill = True
         '
         'StudentidDataGridViewTextBoxColumn
         '
@@ -129,19 +106,54 @@ Partial Class Form10
         Me.ContactDataGridViewTextBoxColumn.HeaderText = "contact"
         Me.ContactDataGridViewTextBoxColumn.Name = "ContactDataGridViewTextBoxColumn"
         '
+        'StudentinfoBindingSource
+        '
+        Me.StudentinfoBindingSource.DataMember = "studentinfo"
+        Me.StudentinfoBindingSource.DataSource = Me.Database1DataSet4
+        '
+        'Database1DataSet4
+        '
+        Me.Database1DataSet4.DataSetName = "Database1DataSet4"
+        Me.Database1DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(266, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(130, 30)
+        Me.Label1.TabIndex = 49
+        Me.Label1.Text = "Student List"
+        '
+        'StudentinfoTableAdapter
+        '
+        Me.StudentinfoTableAdapter.ClearBeforeFill = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(616, 296)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(147, 41)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "Refresh"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form10
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
         Me.Name = "Form10"
         Me.Text = "Form10"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Database1DataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StudentinfoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Database1DataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,4 +172,5 @@ Partial Class Form10
     Friend WithEvents YearDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CourseDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ContactDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

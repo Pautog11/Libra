@@ -24,3 +24,4 @@ C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form9.resourc
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form10.resources
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form11.resources
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form12.resources
+C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form13.resources

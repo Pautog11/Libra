@@ -68,6 +68,7 @@ Partial Class Form9
         Me.DataGridView1.DataSource = Me.TransacBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(12, 58)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(943, 150)
         Me.DataGridView1.TabIndex = 42
         '
