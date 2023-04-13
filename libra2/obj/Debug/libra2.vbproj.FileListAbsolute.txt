@@ -25,3 +25,32 @@ C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form10.resour
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form11.resources
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form12.resources
 C:\Users\Christian\OneDrive\Desktop\libra2\libra2\obj\Debug\libra2.Form13.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\Database1.mdf
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\Database1_log.ldf
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\libra2.exe.config
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\libra2.exe
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\libra2.pdb
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\libra2.xml
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.vbproj.AssemblyReference.cache
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.vbproj.SuggestedBindingRedirects.cache
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form1.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form10.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form11.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form12.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form13.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form2.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form3.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form4.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form5.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form6.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form7.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form8.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Form9.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.Resources.resources
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.vbproj.GenerateResource.cache
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.vbproj.CoreCompileInputs.cache
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.exe
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.xml
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.pdb
+D:\SCHOOL FILES\Archive\Libra\libra2\bin\Debug\Guna.UI2.dll
+D:\SCHOOL FILES\Archive\Libra\libra2\obj\Debug\libra2.vbproj.CopyComplete

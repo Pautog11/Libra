@@ -9,15 +9,15 @@ Public Class Form6
         Me.BooksTableAdapter.Fill(Me.Database1DataSet6.books)
         'TODO: This line of code loads data into the 'Database1DataSet5.transac' table. You can move, or remove it, as needed.
         Me.TransacTableAdapter.Fill(Me.Database1DataSet5.transac)
-        disp_data()
+        ' disp_data() scroll down to see further details
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Form3.Show()
         Me.Hide()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         Dim i As Integer
         If ConnectionState.Open Then
             a.Close()
@@ -53,23 +53,27 @@ Public Class Form6
 
         End Try
     End Sub
-    Public Sub disp_data()
-        If ConnectionState.Open Then
-            a.Close()
-        End If
-        a.Open()
-        b = a.CreateCommand()
-        b.CommandType = CommandType.Text
-        b.CommandText = "select * from books where Availability = 'Not Available'"
-        b.ExecuteNonQuery()
-        Dim dt As New DataTable()
-        Dim da As New SqlDataAdapter(b)
-        da.Fill(dt)
-        DataGridView1.DataSource = dt
-        a.Close()
-    End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        disp_data()
+    ' No need na for this kase may fill ka na dun sa form_load
+
+    'Public Sub disp_data()
+    '    If ConnectionState.Open Then
+    '        a.Close()
+    '    End If
+    '    a.Open()
+    '    b = a.CreateCommand()
+    '    b.CommandType = CommandType.Text
+    '    b.CommandText = "select * from books where Availability = 'Not Available'"
+    '    b.ExecuteNonQuery()
+    '    Dim dt As New DataTable()
+    '    Dim da As New SqlDataAdapter(b)
+    '    da.Fill(dt)
+    '    DataGridView1.DataSource = dt
+    '    a.Close()
+    'End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+        Me.BooksTableAdapter.Fill(Me.Database1DataSet6.books)
+        'disp_data() No need na ulit para dito gamitin mo lang si fill function
     End Sub
 End Class

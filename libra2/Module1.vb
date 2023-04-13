@@ -1,7 +1,9 @@
 ﻿Imports System.Data.SqlClient
 
 Module Module1
-    Public a As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Christian\OneDrive\Desktop\libra2\libra2\Database1.mdf;Integrated Security=True")
+    ' Connection string mo to: "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Christian\OneDrive\Desktop\libra2\libra2\Database1.mdf;Integrated Security=True
+    ' Pinalitan ko lang nung sakin
+    Public a As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\SCHOOL FILES\Archive\Libra\libra2\Database1.mdf;Integrated Security=True")
     Public b As New SqlCommand
     Public c As SqlDataReader
     Public ava As String = "Available"

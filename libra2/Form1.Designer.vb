@@ -22,16 +22,18 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Form1Style = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Georgia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(88, 121)
+        Me.Button1.Location = New System.Drawing.Point(101, 145)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(217, 40)
         Me.Button1.TabIndex = 0
@@ -41,7 +43,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Georgia", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(88, 225)
+        Me.Button2.Location = New System.Drawing.Point(101, 249)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(217, 43)
         Me.Button2.TabIndex = 1
@@ -52,7 +54,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(126, 49)
+        Me.Label1.Location = New System.Drawing.Point(140, 73)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 30)
         Me.Label1.TabIndex = 2
@@ -62,11 +64,19 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe Script", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(111, 176)
+        Me.Label2.Location = New System.Drawing.Point(125, 200)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(168, 34)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "-----or-----"
+        '
+        'Form1Style
+        '
+        Me.Form1Style.AnimateWindow = True
+        Me.Form1Style.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_CENTER
+        Me.Form1Style.ContainerControl = Me
+        Me.Form1Style.DockIndicatorTransparencyValue = 0.6R
+        Me.Form1Style.TransparentWhileDrag = True
         '
         'Form1
         '
@@ -77,8 +87,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -88,4 +99,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Form1Style As Guna.UI2.WinForms.Guna2BorderlessForm
 End Class
